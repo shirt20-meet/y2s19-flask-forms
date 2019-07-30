@@ -6,9 +6,11 @@
 </head>
 <body>
     <h1>Add a Student</h1>
-    <form method="post">\
+    <form method="POST" action="/add">
         <br>
-        <input type="submit" value="Submit">
+        <input type="text" name="student_name" placeholder="student name"><br>
+        <input type="text" name="student_year" placeholder="student year"><br>
+        <input type="submit" name="submit" value="submit">
     </form>
     <p><a href="{{url_for('home')}}">Home</a></p>
 </body>
